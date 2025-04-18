@@ -1,0 +1,12 @@
+../lib/abcc-driver-api/abcc-driver/src/abcc_command_sequencer.c:85:25:AllocCmdSeqEntry	3
+../lib/abcc-driver-api/abcc-driver/src/abcc_command_sequencer.c:121:13:ResetCmdSeqEntry	4
+../lib/abcc-driver-api/abcc-driver/src/abcc_command_sequencer.c:161:25:FindCmdSeqEntryFromSourceId	5
+../lib/abcc-driver-api/abcc-driver/src/abcc_command_sequencer.c:189:13:ValidateHandle	4
+../lib/abcc-driver-api/abcc-driver/src/abcc_command_sequencer.c:226:13:CheckAndSetState	7
+../lib/abcc-driver-api/abcc-driver/src/abcc_command_sequencer.c:270:13:DoAbort	7
+../lib/abcc-driver-api/abcc-driver/src/abcc_command_sequencer.c:340:13:HandleResponse	9
+../lib/abcc-driver-api/abcc-driver/src/abcc_command_sequencer.c:438:13:ExecCmdSequence	12
+../lib/abcc-driver-api/abcc-driver/src/abcc_command_sequencer.c:545:20:ABCC_CmdSeqAdd	4
+../lib/abcc-driver-api/abcc-driver/src/abcc_command_sequencer.c:583:20:ABCC_CmdSeqAbort	4
+../lib/abcc-driver-api/abcc-driver/src/abcc_command_sequencer.c:609:6:ABCC_CmdSequencerInit	2
+../lib/abcc-driver-api/abcc-driver/src/abcc_command_sequencer.c:619:6:ABCC_CmdSequencerExec	8

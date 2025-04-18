@@ -1,0 +1,2 @@
+../lib/abcc-driver-api/abcc-driver/src/abcc_remap.c:23:13:abcc_RemapRespMsgSent	8	static
+../lib/abcc-driver-api/abcc-driver/src/abcc_remap.c:29:20:ABCC_SendRemapRespMsg	24	static

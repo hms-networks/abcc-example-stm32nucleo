@@ -1,0 +1,6 @@
+../lib/abcc-driver-api/src/abcc_api_command_handler.c:31:6:ABCC_CbfHandleCommandMessage	16	static
+../lib/abcc-driver-api/src/abcc_api_command_handler.c:54:13:SetResponseMessage	40	static
+../lib/abcc-driver-api/src/abcc_api_command_handler.c:114:13:FindCommandHandler	48	static
+../lib/abcc-driver-api/src/abcc_api_command_handler.c:171:13:GetAttributeHandler	48	static
+../lib/abcc-driver-api/src/abcc_api_command_handler.c:253:13:SetAttributeHandler	40	static
+../lib/abcc-driver-api/src/abcc_api_command_handler.c:302:13:ObjectSpecificHandler	16	static

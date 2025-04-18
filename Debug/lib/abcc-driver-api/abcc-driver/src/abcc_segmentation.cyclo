@@ -1,0 +1,8 @@
+../lib/abcc-driver-api/abcc-driver/src/abcc_segmentation.c:91:29:AllocSegmentationSession	3
+../lib/abcc-driver-api/abcc-driver/src/abcc_segmentation.c:125:29:FindSegmentationSession	7
+../lib/abcc-driver-api/abcc-driver/src/abcc_segmentation.c:160:13:FreeSegmentationSession	1
+../lib/abcc-driver-api/abcc-driver/src/abcc_segmentation.c:182:13:GetNextDataBlock	3
+../lib/abcc-driver-api/abcc-driver/src/abcc_segmentation.c:210:13:PrepareAndSendSegmentationRespMsg	11
+../lib/abcc-driver-api/abcc-driver/src/abcc_segmentation.c:304:6:ABCC_SegmentationInit	2
+../lib/abcc-driver-api/abcc-driver/src/abcc_segmentation.c:315:28:ABCC_StartServerRespSegmentationSession	5
+../lib/abcc-driver-api/abcc-driver/src/abcc_segmentation.c:378:6:ABCC_HandleSegmentAck	4
