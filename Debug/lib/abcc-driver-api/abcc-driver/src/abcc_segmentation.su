@@ -1,8 +1,0 @@
-../lib/abcc-driver-api/abcc-driver/src/abcc_segmentation.c:91:29:AllocSegmentationSession	16	static
-../lib/abcc-driver-api/abcc-driver/src/abcc_segmentation.c:125:29:FindSegmentationSession	24	static
-../lib/abcc-driver-api/abcc-driver/src/abcc_segmentation.c:160:13:FreeSegmentationSession	16	static
-../lib/abcc-driver-api/abcc-driver/src/abcc_segmentation.c:182:13:GetNextDataBlock	16	static
-../lib/abcc-driver-api/abcc-driver/src/abcc_segmentation.c:210:13:PrepareAndSendSegmentationRespMsg	40	static
-../lib/abcc-driver-api/abcc-driver/src/abcc_segmentation.c:304:6:ABCC_SegmentationInit	16	static
-../lib/abcc-driver-api/abcc-driver/src/abcc_segmentation.c:315:28:ABCC_StartServerRespSegmentationSession	40	static
-../lib/abcc-driver-api/abcc-driver/src/abcc_segmentation.c:378:6:ABCC_HandleSegmentAck	40	static

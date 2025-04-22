@@ -1,2 +1,0 @@
-../lib/abcc-driver-api/abcc-driver/src/spi/abcc_handler_spi.c:30:6:ABCC_SpiRunDriver	32	static
-../lib/abcc-driver-api/abcc-driver/src/spi/abcc_handler_spi.c:102:6:ABCC_SpiISR	16	static

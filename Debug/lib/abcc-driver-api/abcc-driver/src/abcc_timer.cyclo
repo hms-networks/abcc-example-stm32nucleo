@@ -1,7 +1,0 @@
-../lib/abcc-driver-api/abcc-driver/src/abcc_timer.c:31:6:ABCC_TimerInit	2
-../lib/abcc-driver-api/abcc-driver/src/abcc_timer.c:44:18:ABCC_TimerCreate	4
-../lib/abcc-driver-api/abcc-driver/src/abcc_timer.c:70:6:ABCC_TimerStart	2
-../lib/abcc-driver-api/abcc-driver/src/abcc_timer.c:94:6:ABCC_TimerStop	1
-../lib/abcc-driver-api/abcc-driver/src/abcc_timer.c:109:6:ABCC_TimerTick	6
-../lib/abcc-driver-api/abcc-driver/src/abcc_timer.c:141:6:ABCC_TimerDisable	1
-../lib/abcc-driver-api/abcc-driver/src/abcc_timer.c:146:8:ABCC_TimerGetUptimeMs	1

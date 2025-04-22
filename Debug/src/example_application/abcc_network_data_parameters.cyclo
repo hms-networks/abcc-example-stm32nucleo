@@ -1,2 +1,0 @@
-../src/example_application/abcc_network_data_parameters.c:59:8:ABCC_API_CbfGetNumAdi	1
-../src/example_application/abcc_network_data_parameters.c:68:6:ABCC_API_CbfCyclicalProcessing	4

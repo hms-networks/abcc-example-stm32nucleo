@@ -1,2 +1,0 @@
-../lib/abcc-driver-api/abcc-driver/src/abcc_log.c:73:6:ABCC_LogHandler	104	static
-../lib/abcc-driver-api/abcc-driver/src/abcc_log.c:162:6:ABCC_LogError	16	static

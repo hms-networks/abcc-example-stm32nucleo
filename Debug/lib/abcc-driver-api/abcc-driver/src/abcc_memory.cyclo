@@ -1,5 +1,0 @@
-../lib/abcc-driver-api/abcc-driver/src/abcc_memory.c:82:6:ABCC_MemCreatePool	2
-../lib/abcc-driver-api/abcc-driver/src/abcc_memory.c:96:14:ABCC_MemAlloc	2
-../lib/abcc-driver-api/abcc-driver/src/abcc_memory.c:115:6:ABCC_MemFree	3
-../lib/abcc-driver-api/abcc-driver/src/abcc_memory.c:148:26:ABCC_MemGetBufferStatus	2
-../lib/abcc-driver-api/abcc-driver/src/abcc_memory.c:163:6:ABCC_MemSetBufferStatus	2
