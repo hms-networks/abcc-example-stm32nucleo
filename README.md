@@ -5,8 +5,8 @@ To enable easy evaluation and inspiration to [Anybus CompactCom](https://www.hms
 
 ## Prerequisites
 ### Integrated Development Environment (IDE)
-- [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html) is needed to run this example application.
-### STM32 Nucleo H753ZI
+- [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html) is required to run this example application.
+### Hardware
 - This example application is created for the [STM32 Nucleo H753ZI](https://www.st.com/en/evaluation-tools/nucleo-h753zi.html) board together with the [adapter board](https://www.hms-networks.com/p/024620-b-anybus-compactcom-adapter-board-module-to-stm32-nucleo) from HMS.
 ### Git
 - Of course, you will need to have Git installed. See [this tutorial](https://github.com/git-guides/install-git) on how to install Git.
