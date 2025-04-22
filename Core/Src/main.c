@@ -282,6 +282,12 @@ int main(void)
   }
 
   ABCC_API_Shutdown();
+  while (1)
+  {
+      /*
+      ** The program has ended and shall be terminated.
+      */
+  }
   /* USER CODE END 3 */
 }
 
