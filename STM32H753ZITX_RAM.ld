@@ -165,6 +165,30 @@ SECTIONS
     . = ALIGN(8);
   } >DTCMRAM
 
+  /* SRAM1 - manually added for the ABCC example, required for the SPI DMA buffers. */
+  .sram1 :
+  {
+    . = ALIGN(4);
+    _ssram1 = .;        /* create a global symbol at data start */
+    *(.sram1)           /* .data sections */
+    *(.sram1*)          /* .data* sections */
+
+    . = ALIGN(4);
+    _esram1 = .;        /* define a global symbol at data end */
+  } >RAM_D2
+
+  /* SRAM4 - manually added for the ABCC example, required for the UART DMA buffers. */
+  .sram4 :
+  {
+    . = ALIGN(4);
+    _ssram4 = .;        /* create a global symbol at data start */
+    *(.sram4)           /* .data sections */
+    *(.sram4*)          /* .data* sections */
+
+    . = ALIGN(4);
+    _esram4 = .;        /* define a global symbol at data end */
+  } >RAM_D3
+
   /* Remove information from the standard libraries */
   /DISCARD/ :
   {
