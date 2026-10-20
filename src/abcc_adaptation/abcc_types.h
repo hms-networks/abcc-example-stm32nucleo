@@ -62,34 +62,19 @@
 ** The standard unsigned 8, 16, and 32 bit data types (respectively).
 **---------------------------------------------------------------------------
 */
-typedef int             BOOL;
-typedef int8_t          BOOL8;
-typedef uint8_t         UINT8;
-typedef int8_t          INT8;
-typedef uint16_t        UINT16;
-typedef int16_t         INT16;
-typedef uint32_t        UINT32;
-typedef int32_t         INT32;
-typedef float           FLOAT32;
 
-/*---------------------------------------------------------------------------
-**
-** FLOAT64
-**
-** INT64
-** UINT64
-**
-** 64-bit floating point type according to IEC 60559 / IEEE 754.
-** 64-bit signed and unsigned integer types.
-**
-** Those types are optional and support for them must also be enabled in
-** "abcc_driver_config.h" if they are to be used. See the comments in
-** "abcc_config.h" for more information.
-**---------------------------------------------------------------------------
-*/
-typedef double            FLOAT64;
-typedef uint64_t          UINT64;
-typedef int64_t           INT64;
+typedef int        BOOL;
+typedef int8_t     BOOL8;
+typedef uint8_t    UINT8;
+typedef int8_t     INT8;
+typedef uint16_t   UINT16;
+typedef int16_t    INT16;
+typedef uint32_t   UINT32;
+typedef int32_t    INT32;
+typedef uint64_t   UINT64;
+typedef int64_t    INT64;
+typedef float      FLOAT32;
+typedef double     FLOAT64;
 
 /*------------------------------------------------------------------------------
 ** LeINT16
@@ -102,8 +87,10 @@ typedef int64_t           INT64;
 */
 typedef INT16     LeINT16;
 typedef INT32     LeINT32;
+typedef INT64     LeINT64;
 typedef UINT16    LeUINT16;
 typedef UINT32    LeUINT32;
+typedef UINT64    LeUINT64;
 
 /*------------------------------------------------------------------------------
 ** BeINT16
@@ -116,8 +103,10 @@ typedef UINT32    LeUINT32;
 */
 typedef INT16     BeINT16;
 typedef INT32     BeINT32;
+typedef INT64     BeINT64;
 typedef UINT16    BeUINT16;
 typedef UINT32    BeUINT32;
+typedef UINT64    BeUINT64;
 
 /*---------------------------------------------------------------------------
 **
@@ -175,3 +164,4 @@ typedef UINT32    BeUINT32;
 #define PACKED_STRUCT       __attribute__((packed))
 
 #endif  /* inclusion lock */
+
