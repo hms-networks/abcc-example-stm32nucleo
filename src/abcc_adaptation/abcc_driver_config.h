@@ -7,7 +7,7 @@
 ** documented in the driver's public interface abcc_config.h.
 **
 ** Configuration options with default values defined in abcc_config.h will be
-** used unless overriden here.
+** used unless overridden here.
 ********************************************************************************
 */
 
@@ -18,7 +18,7 @@
 #include "abp.h"
 
 /*------------------------------------------------------------------------------
-** SPI and serial are supported
+** Parallel interface driver not supported.
 **------------------------------------------------------------------------------
 */
 #define ABCC_CFG_DRV_SPI_ENABLED                   1
@@ -33,16 +33,30 @@
 #define ABCC_CFG_OP_MODE_SETTABLE                  1
 
 /*------------------------------------------------------------------------------
+** ABCC memory access configuration for parallel operating modes
+**------------------------------------------------------------------------------
+*/
+#define ABCC_CFG_MEMORY_MAPPED_ACCESS_ENABLED      0
+
+/*------------------------------------------------------------------------------
 ** Module identification configuration
 **------------------------------------------------------------------------------
 */
 #define ABCC_CFG_MODULE_ID_PINS_CONN               1
 
 /*------------------------------------------------------------------------------
-** Configuration of max process data size
+** Module detection configuration
 **------------------------------------------------------------------------------
 */
-#define ABCC_CFG_MAX_PROCESS_DATA_SIZE             ( 1024 )
+#define ABCC_CFG_MOD_DETECT_PINS_CONN              1
+
+/*------------------------------------------------------------------------------
+** Configuration of message handling
+**------------------------------------------------------------------------------
+*/
+#define ABCC_CFG_MAX_NUM_APPL_CMDS                 ( 4 )
+#define ABCC_CFG_MAX_NUM_ABCC_CMDS                 ( 4 )
+#define ABCC_CFG_MAX_PROCESS_DATA_SIZE             ( 4096 )
 
 /*------------------------------------------------------------------------------
 ** Interrupt configuration excluding sync
@@ -50,6 +64,7 @@
 */
 #define ABCC_CFG_POLL_ABCC_IRQ_PIN_ENABLED         1
 #define ABCC_CFG_INT_ENABLED                       0
+
 #if( ABCC_CFG_INT_ENABLED )
    #define ABCC_CFG_INT_ENABLE_MASK_PAR            ( ABP_INTMASK_RDPDIEN | ABP_INTMASK_STATUSIEN | ABP_INTMASK_RDMSGIEN | ABP_INTMASK_WRMSGIEN | ABP_INTMASK_ANBRIEN  )
    #define ABCC_CFG_INT_ENABLE_MASK_SPI            ( 0 )
@@ -61,12 +76,6 @@
 **------------------------------------------------------------------------------
 */
 #define ABCC_CFG_DRV_ASSUME_FW_UPDATE_ENABLED      1
-
-/*------------------------------------------------------------------------------
-** Remap support configuration
-**------------------------------------------------------------------------------
-*/
-#define ABCC_CFG_REMAP_SUPPORT_ENABLED             1
 
 /*------------------------------------------------------------------------------
 ** Anybus objects to support.
@@ -147,6 +156,33 @@
 #define ABCC_CFG_LOG_FILE_LINE_ENABLED 1
 #define ABCC_CFG_LOG_TIMESTAMPS_ENABLED 1
 #define ABCC_CFG_LOG_STRINGS_ENABLED 1
-#define ABCC_CFG_LOG_COLORS_ENABLED 0
+#define ABCC_CFG_LOG_COLORS_ENABLED 1
+
+/*------------------------------------------------------------------------------
+** #define ABCC_CFG_STRUCT_DATA_TYPE_ENABLED   1 - Enable / 0 - Disable
+**
+** Overwriting the default value of abcc_driver.h
+**
+** Enable/disable driver and AD object support for structured data data types.
+** This define will affect the AD_AdiEntryType
+** (abcc_application_data_interface.h) used for defining the user ADI:s.
+**------------------------------------------------------------------------------
+*/
+#define ABCC_CFG_STRUCT_DATA_TYPE_ENABLED 0             
+
+/*------------------------------------------------------------------------------
+** #define ABCC_CFG_ADI_GET_SET_CALLBACK_ENABLED   1 - Enable / 0 - Disable
+**
+** Overwriting the default value of abcc_driver.h
+**
+** Enable/disable driver support for triggering of callback notifications each
+** time an ADI is read or written. This define will affect the AD_AdiEntryType
+** (abcc_application_data_interface.h) used for defining the user ADI:s.
+** If an ADI is read by the network the callback is invoked before the action.
+** If an ADI is written by the network the callback is invoked after the action.
+**------------------------------------------------------------------------------
+*/
+#define ABCC_CFG_ADI_GET_SET_CALLBACK_ENABLED 0       
+
 
 #endif  /* inclusion lock */
