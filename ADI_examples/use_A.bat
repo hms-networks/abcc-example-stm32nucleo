@@ -56,7 +56,7 @@ copy ADI_examples\A_speed_example\A_speed_example_selected.txt  ADI_examples\*.*
 REM pause
 
 ECHO ****************************************************************************************************
-ECHO * Batch file executed succcessfully!								*
+ECHO * Batch file executed successfully!								*
 ECHO ****************************************************************************************************
 pause
  
