@@ -21,6 +21,7 @@
 ** Parallel interface driver not supported.
 **------------------------------------------------------------------------------
 */
+#define ABCC_CFG_DRV_PARALLEL_ENABLED              0
 #define ABCC_CFG_DRV_SPI_ENABLED                   1
 #define ABCC_CFG_DRV_SERIAL_ENABLED                1
 
